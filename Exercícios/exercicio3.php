@@ -52,8 +52,7 @@ echo " | Números negativos. <br>";
 <br><hr>
     <h2 class="destaque">Exemplo float</h2>
 
-    <h2 class="subtitulos">Números de ponto flutuante</h2>
-    <p>Tipo: float</p>
+    
       
    
     <h3>Verificação:</h3>
