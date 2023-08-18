@@ -6,12 +6,16 @@
        <style>
         .destaque {color:red;}
         .paragrafo {color:blue}
+        .nome {color:green}
         
     </style>
 </head>
 <body>
+    
     <h1 class="destaque">Trabalhando com PHP</h1>
-    <h2 class="paragrafo">Colorindo as letras</h2>
+    <p class="nome">
+    O que é PHP? Guia Básico de Programação PHP
+    PHP é uma linguagem de script do tipo server-side com diversos propósitos. Porém, ela é principalmente utilizada para gerar conteúdos dinâmicos num site. Trata-se de uma linguagem altamente popular devido à sua natureza de código aberto e suas funcionalidades versáteis</p>
     <p>Programador: Lara Andrade Ribeiro</p>
     <hr>
 
