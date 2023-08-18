@@ -37,6 +37,25 @@
     <p>Para saber se uma variável é string usamos a função is_string()</p>
 
     <!-- Código PHP para verificar strings -->
+    <?php
+
+        $str = "SENAI";
+        $num = 118;
+
+        if(is_string($str)) {
+            "echo $str é uma string 1 <br>";
+        }
+
+        if(is_string($num)) {
+            echo "$num é uma string 2 <br>";
+        }
+
+        if(is_string("$asd")) {
+            echo "é uma string 3 <br>";
+        }
+        
+        
+    ?>
    
 </body>
 </html>

@@ -14,6 +14,26 @@
     <p>Veja 2 exemplos:</p>
     
     <!-- Código PHP para arrays -->
-       
+    <?php
+        echo "<p>Sintaxe NOMAL: Usa o nome e põe os valores entre parenteses.</p>";
+        $a = array (1, 2, 3, 4);
+
+        //Mostra no vavegador o Array inteiro
+        print_r($a);
+        echo "<br>";
+
+        //Mostra no navegador somente o valor da primeira posição na lista.
+        echo "<p>O Primeiro valor da lista é: $a [0]</p>";
+
+        echo "<br><hr><p>Sintaxe CURTA NÂO usa o nome e põe os valores entre colchetes.</p>";
+
+        $arr = ["SENAI", 118, true];
+
+        echo "<br>";
+        print_r($arr);
+        echo "<br>";
+        print_r($arr[1]);
+        echo "<br><p>>O segundo da lista é: $arr[1]</p>";
+    ?>
 </body>
 </html>
