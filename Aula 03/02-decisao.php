@@ -71,8 +71,27 @@
     </ul>
 
     <!-- Criar aqui seu programa PHP -->
+    <hr>
+
+    <?php
+     $a = 5;
+     $b = 1;
+     
+     if($a > 1 ){
+         echo "A variavel possui valor maior que 1.";
+     } 
+
+
+     if($a > $b);
+
+     echo "Essa variavel também possui valor maior que 1."
+
+    ?>
+
+
     
-    
+   
+
     <hr>
     
     <!-- ___________________________________________________________________ -->
@@ -120,8 +139,27 @@
     </ul>
     <hr>
 
-    <!-- Criar aqui seu programa PHP -->
+    
+    
+    
 
+    <!-- Criar aqui seu programa PHP -->
+    <?php
+    $produto = 'Ultrabook_ASUS';
+        $estoque_atual = 0;
+        $estoque_min = 14;
+
+        echo "<h3>$produto</h3>";
+
+        if ($estoque_atual < $estoque_min) {
+            echo "<span class=repor>É necessário comprar.</span>";
+            echo "<br>";
+            echo "<mark>URGENTE</mark>";
+        } else {
+            echo "<span class=ok>Estoque OK!</span>";
+        }
+    ?>
+        
     
     <hr>
 
@@ -168,6 +206,35 @@
     <hr>
     
     <!-- Criar aqui seu programa PHP -->
+        <!-- 1- Esfiha
+        2- Pastel
+        3- Pizza
+        4- Opção inválida -->
+
+    <?php
+        
+
+
+       
+
+        // Criar uma variável para receber uma das opções da lista. Iniciar com uma delas.
+        $opcao = "1";
+
+        // Montar uma estrutura encadeada que verifique qual a opção escolhida
+        if ($opcao == "1") {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Você pediu uma esfiha.";
+        } elseif ($opcao == "2") {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Você pediu um pastel.";
+        } elseif ($opcao == "3") {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Você pediu uma pizza.";
+        } else {
+            // Exibir o nome do produto pedido conforme a opção escolhida na variável.
+            echo "Opção inválida.";
+        }
+        ?>
     
     <hr>
 
@@ -202,8 +269,22 @@
     <hr>
 
     <!-- Criar aqui seu programa PHP -->
-    
-    
+    <?php
+$valor = 1;
+
+switch ($valor) {
+    case 1:
+        echo "A escolha é Pastel";
+        break;
+    case 2:
+        echo "A escolha é Esfiha";
+        break;
+    case 3:
+        echo "A escolha é Pizza";
+        break;
+
+}
+?>
     <!-- Rodapé -->
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
