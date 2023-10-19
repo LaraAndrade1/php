@@ -15,8 +15,25 @@
     <!-- ________________________________________________________________________________ -->
  
 
-    <!-- 1ª Digitação (aqui) -->
+<?php
+    // Delectar quando o formulário é acionado
+    if(isset($_POST['enviar']) ){
 
+        //Valiando se os campos foram preenchidos
+        if(empty($_POST['nome']) || empty($_POST['email']) ) {
+            
+?>
+    <p style="color:red">Preencha os campos</p>
+    <p><a href=""><link href="10-formulario-processamento.php">Voltar</a></p>
+
+
+<?php
+        } else {
+
+            $nome = filter_input(INPUT_POST, "nome", FILTER_SANITIZE_SPECIAL_CHARS);
+            $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+           
+?>
     <section>
         <h2>Dados</h2>
         <p>Nome: <?= $nome?></p>
@@ -26,7 +43,11 @@
     <p><a href=""><link href="10-formulario-processamento.php">Voltar</a></p>
     
 
-    <!-- 2ª Digitação (aqui) -->
+<?php
+        }
+    } else {
+
+?>
 
     
     <!-- Entra aqui porque ao entrar na página ele entra no falso e cai aqui (Mostra formulário) -->
@@ -45,7 +66,9 @@
         <button type="reset" name="limpar">Limpar</button>
     </form>
 
-    <!-- 3ª Digitação (aqui) -->
+<?php
+    }
+?>
     
 </body>
 </html>
